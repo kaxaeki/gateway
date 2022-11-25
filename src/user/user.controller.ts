@@ -12,6 +12,7 @@ import {
 import { UserService } from './user.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
+import { BusinessException } from 'src/common/exceptions/business.exception.filter';
 
 @Controller({
   path: 'user',
@@ -35,6 +36,18 @@ export class UserController {
   @Version('2')
   findAll1() {
     return 'i am new one';
+  }
+
+  @Get('findBusinessError')
+  @Version('3')
+  findBusinessError() {
+    const a: any = {};
+    try {
+      console.log(a.b.c);
+    } catch (error) {
+      throw new BusinessException('你这个参数错了');
+    }
+    return this.userService.findAll();
   }
 
   @Get(':id')

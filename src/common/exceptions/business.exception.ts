@@ -14,7 +14,6 @@ export class BusinessException extends HttpException {
         message: err,
       };
     }
-
     super(err, HttpStatus.OK);
   }
 

@@ -18,12 +18,12 @@ lerna-debug.log*
 /coverage
 /.nyc_output
 
-# IDEs and editors
+# IDEs and editors *.launch
 /.idea
 .project
 .classpath
 .c9/
-*.launch
+
 .settings/
 *.sublime-workspace
 

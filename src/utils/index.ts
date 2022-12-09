@@ -1,18 +1,21 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 import { parse } from 'yaml';
-const fs = require('fs');
 const path = require('path');
+const fs = require('fs');
 
+// 获取项目运行环境
 export const getEnv = () => {
-  const env = process.env.RUNNING_ENV || 'dev';
-  return env;
+  return process.env.RUNNING_ENV;
 };
 
-export const getConfig = () => {
+// 读取项目配置
+export const getConfig = (type?: string) => {
   const environment = getEnv();
   const yamlPath = path.join(process.cwd(), `./.config/.${environment}.yaml`);
   const file = fs.readFileSync(yamlPath, 'utf8');
   const config = parse(file);
-  console.log(config);
+  if (type) {
+    return config[type];
+  }
   return config;
 };

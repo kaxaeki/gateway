@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const nodeExternals = require('webpack-node-externals');
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const { RunScriptWebpackPlugin } = require('run-script-webpack-plugin');
 
 module.exports = function (options, webpack) {
@@ -16,7 +15,7 @@ module.exports = function (options, webpack) {
       ...options.plugins,
       new webpack.HotModuleReplacementPlugin(),
       new webpack.WatchIgnorePlugin({
-        paths: [/.js$/, /.d.ts$/],
+        paths: ['/.js$/', '/.d.ts$/'],
       }),
       new RunScriptWebpackPlugin({ name: options.output.filename }),
     ],

@@ -4,5 +4,7 @@
   "sourceRoot": "src",
   "generateOptions": {
     "spec": false
-  }
+  },
+  "migrations": ["dist/migrations/*.js"],
+  "webpack": false
 }

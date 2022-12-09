@@ -10,6 +10,10 @@ export class UserService {
   ) {}
 
   createOrSave(user) {
-    return this.userRepository.save(user);
+    try {
+      return this.userRepository.save(user);
+    } catch (error) {
+      console.log(error);
+    }
   }
 }

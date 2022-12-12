@@ -1,0 +1,131 @@
+Bit	EMS Code	Pylon BAT			BMS Code	EMS Code	Wifo BAT			Bit	EMS Code	DynessHV BAT	
+0	25	单体低压保护	Battery Cell Under Voltage Protection		0	2	单体过压告警	Cell Over Voltage alarm		0	25	单体低压保护	Battery Cell Under Voltage Protection
+1	26	单体高压保护	Battery Cell Over Voltage Protection		1	1	单体欠压告警	Cell Under Voltage alarm		1	26	单体高压保护	Battery Cell Over Voltage Protection
+2	27	总压低压保护	Pile Under Voltage Protection		2	9	充电过流告警	Cell Over Current alarm		2	27	总压低压保护	Pile Under Voltage Protection
+3	28	总压高压保护	Pile Over Voltage Protection		3	10	放电过流告警	DisCharge Over Current alarm		3	28	总压高压保护	Pile Over Voltage Protection
+4	29	充电低温保护	Charge Under Temperature Protection		4	4	总电压过压告警	pack Over Voltage alarm		4	29	充电低温保护	Charge Under Temperature Protection
+5	30	充电高温保护	Charge Over Temperature Protection		5	3	总电压欠压告警	pack Under Voltage alarm		5	30	充电高温保护	Charge Over Temperature Protection
+6	31	放电低温保护	DisCharge Under Temperature Protection		6	6	充电时过温告警	Over temperature in charging alarm		6	31	放电低温保护	DisCharge Under Temperature Protection
+7	32	放电高温保护	DisCharge Over Temperature Protection		7	5	充电时欠温告警	under temperature in charging alarm		7	32	放电高温保护	DisCharge Over Temperature Protection
+8	33	充电过流保护	Charge Over Current Protection		8	8	放电时过温告警	Over temperature in discharging alarm		8	33	充电过流保护	Charge Over Current Protection
+9	34	放电过流保护	DisCharge Over Current Protection		9	7	放电时欠温告警	under temperature in discharging alarm		9	34	放电过流保护	DisCharge Over Current Protection
+10	35	短路保护	Short Circuit Protection		10	11	温度过高或温度采样断开	Over temperature\\or temperature sensor wire break		10	37	模块低压保护	Module Under Voltage Protection
+11		保留	Reserved		11	15	SOC低告警	SOC_under_threshold_alarm		11	38	模块高压保护	Module Over Voltage Protection
+12	36	模块温度高保护	Module Over Temperature Protection		12	16	flash数据异常告警	flash_userdata_invalid_alarm		12		保留	Reserved
+13	37	模块低压保护	Module Under Voltage Protection		13		预留	Reserved		13		保留	Reserved
+14	38	模块高压保护	Module Over Voltage Protection		14		预留	Reserved		14		保留	Reserved
+15		保留	Reserved		15		预留	Reserved		15		保留	Reserved
+					16	41	电量计通信故障	Gauge com Error					
+0	1	单体低压告警	Battery Cell Low Voltage Alarm		17	50	电量计过压	Gauge Over Voltage		0	1	单体低压告警	Battery Cell Low Voltage Alarm
+1	2	单体高压告警	Battery Cell High Voltage Alarm		18	51	电量计欠压	Gauge Under Voltage		1	2	单体高压告警	Battery Cell High Voltage Alarm
+2	3	总压低压告警	Pile Low Voltage Alarm		19	52	电量计充电过流	Gauge Charge Over Current		2	3	总压低压告警	Pile Low Voltage Alarm
+3	4	总压高压告警	Pile High Voltage Alarm		20	53	电量计放电过流	Gauge DisCharge Over Current		3	4	总压高压告警	Pile High Voltage Alarm
+4	5	充电低温告警	Charge Low Temperature Alarm		21	54	电量计硬件过压	Gauge Hardware Over Voltage		4	5	充电低温告警	Charge Low Temperature Alarm
+5	6	充电高温告警	Charge High Temperature Alarm		22	55	电量计硬件欠压	Gauge Hardware Under Voltage		5	6	充电高温告警	Charge High Temperature Alarm
+6	7	放电低温告警	DisCharge Low Temperature Alarm		23	56	平衡模块SYS故障	Balance Module SYS Error		6	7	放电低温告警	DisCharge Low Temperature Alarm
+7	8	放电高温告警	DisCharge High Temperature Alarm		24	57	平衡模块DEV故障	Balance Module DEV Error		7	8	放电高温告警	DisCharge High Temperature Alarm
+8	9	充电过流告警	Charge Over Current Alarm		25	41	平衡模块通信故障	Balance Module com Error		8	9	充电过流告警	Charge Over Current Alarm
+9	10	放电过流告警	DisCharge Over Current Alarm		26	26	单体过压故障	Cell Over Voltage Fault		9	10	放电过流告警	DisCharge Over Current Alarm
+10		保留	Reserved		27	25	单体欠压故障	Cell Under Voltage Fault		10	13	模块低压告警	Module Low Voltage Alarm
+11	11	BMS温度高告警	BMS High Temperature Alarm		28	33	充电过流故障	Cell Over Current Fault		11	14	模块高压告警	Module High Voltage Alarm
+12	12	模块温度高告警	Module High Temperature Alarm		29	34	放电过流故障	DisCharge Over Current Fault		12		保留	Reserved
+13	13	模块低压告警	Module Low Voltage Alarm		30	28	总电压过压故障	pack Over Voltage Fault		13		保留	Reserved
+14	14	模块高压告警	Module High Voltage Alarm		31	27	总电压欠压故障	pack Under Voltage Fault		14		保留	Reserved
+15		保留	Reserved		32	30	充电时过温故障	Over temperature in charging Fault		15		保留	Reserved
+					33	29	充电时欠温故障或温度采样断开	under temperature in charging Fault\\or temperature sensor wire break					
+0	39	电压传感器故障	Voltage sensor Error		34	32	放电时过温故障	Over temperature in discharging Fault		0	39	电压传感器故障	Voltage sensor Error
+1	40	温度传感器故障	temperature sensor Error		35	31	放电时欠温故障或温度采样断开	under temperature in discharging Fault\\or temperature sensor wire break		1	40	温度传感器故障	temperature sensor Error
+2	41	内部通信故障	INTERNAL COMM ERR		36	36	温度过高	Over temperature		2	41	内部通信故障	INTERNAL COMM ERR
+3	42	输入过压故障	input Over Voltage Error		37	58	单体硬件过压二级故障	Cell Hardware Over Voltage LV2		3	42	输入过压故障	input Over Voltage Error
+4	43	输入反接故障	input transposition Error		38	58	单体硬件过压故障	Cell Hardware Over Voltage		4	43	输入反接故障	input transposition Error
+5	44	继电器故障	RELAY ERR		39	59	单体硬件欠压二级故障	Cell Hardware Under Voltage LV2		5	44	继电器故障	RELAY ERR
+6	45	电池损坏故障	Battery Cell Error		40	59	单体硬件欠压故障	Cell Hardware Under Voltage		6	45	电池损坏故障	Battery Cell Error
+7	46	关机电路异常	Shutdown circuit Error		41	60	硬件充电过流故障	Hardware Charge Over Current Fault		7	72	其他故障	Other Error
+8	47	BMIC 异常	BMIC Error		42	61	硬件放电过流故障	Hardware DisCharge Over Current Fault		8	46	关机电路异常	Shutdown circuit Error
+9	48	内部总线异常	Internal bus Error		43	62	硬件总电压过压故障	Hardware Pack Over Voltage Fault		9	47	BMIC 异常	BMIC Error
+10	49	开机自检异常	Self‐test Error		44	63	硬件总电压欠压故障或熔丝断故障	Hardware Pack Under Voltage Fault\\or fuse break		10	48	内部总线异常	Internal bus Error
+					45	64	电池接线故障	internal Cell open wire		11	49	开机自检异常	Self‐test Error
+					46	65	与主机通信断开	com Error between Pack and host		13		保留	Reserved
+					47	66	ISO故障	ISO Fault		14		保留	Reserved
+					48	36	主控芯片温度高	chip Over temperature		15		保留	Reserved
+					49	67	直流接触器开路	dc break open					
+					50	68	直流接触器短路	dc break short					
+					51	69	电量计与平衡模块检测电压不匹配或熔丝断故障	pack Voltage mismatch between sensors					
+					52	70	电池SOC低故障	SOC_under_threshold_alarm					
+					53	71	异常放电故障	DisCharge_at_force_Charge_mode					
+					54	49	系统初始化故障	system init Error					
+	EMS Code	BAT			55	73	455级联通信故障	455 stack fault					
+	1	单体低压告警	Battery Cell Low Voltage Alarm		56	74	氢气泄漏故障	H2 fault					
+	2	单体高压告警	Battery Cell High Voltage Alarm										
+	3	总压低压告警	Pile Low Voltage Alarm										
+	4	总压高压告警	Pile High Voltage Alarm										
+	5	充电低温告警	Charge Low Temperature Alarm										
+	6	充电高温告警	Charge High Temperature Alarm		62		充电中	charging					
+	7	放电低温告警	DisCharge Low Temperature Alarm		63		放电中	discharging					
+	8	放电高温告警	DisCharge High Temperature Alarm										
+	9	充电过流告警	Charge Over Current Alarm										
+	10	放电过流告警	DisCharge Over Current Alarm										
+	11	BMS温度高告警	BMS High Temperature Alarm										
+	12	模块温度高告警	Module High Temperature Alarm										
+	13	模块低压告警	Module Low Voltage Alarm										
+	14	模块高压告警	Module High Voltage Alarm										
+	15	SOC低告警	SOC_under_threshold_alarm										
+	16	flash数据异常告警	flash_userdata_invalid_alarm										
+	17	预留	Reserve										
+	18	预留	Reserve										
+	19	预留	Reserve										
+	20	预留	Reserve										
+	21	预留	Reserve										
+	22	预留	Reserve										
+	23	预留	Reserve										
+	24	预留	Reserve										
+	25	单体低压保护	Battery Cell Under Voltage Protection										
+	26	单体高压保护	Battery Cell Over Voltage Protection										
+	27	总压低压保护	Pile Under Voltage Protection										
+	28	总压高压保护	Pile Over Voltage Protection										
+	29	充电低温保护	Charge Under Temperature Protection										
+	30	充电高温保护	Charge Over Temperature Protection										
+	31	放电低温保护	DisCharge Under Temperature Protection										
+	32	放电高温保护	DisCharge Over Temperature Protection										
+	33	充电过流保护	Charge Over Current Protection										
+	34	放电过流保护	DisCharge Over Current Protection										
+	35	短路保护	Short Circuit Protection										
+	36	温度高保护	Over Temperature Protection										
+	37	模块低压保护	Module Under Voltage Protection										
+	38	模块高压保护	Module Over Voltage Protection										
+	39	电压传感器故障	Voltage Sensor Error										
+	40	温度采样异常	Temperature Sample Error										
+	41	内部通信故障	Internal Communication Error										
+	42	输入过压故障	Input Over Voltage Error										
+	43	输入反接故障	Input Transposition Error										
+	44	继电器故障	Relay Error										
+	45	电池损坏故障	Battery Cell Error										
+	46	关机电路异常	Shutdown Circuit Error										
+	47	BMIC 异常	BMIC Error										
+	48	内部总线异常	Internal Bus Error										
+	49	初始化自检异常	System Init Test Error										
+	50	电量计过压	Gauge Over Voltage										
+	51	电量计欠压	Gauge Under Voltage										
+	52	电量计充电过流	Gauge Charge Over Current										
+	53	电量计放电过流	Gauge DisCharge Over Current										
+	54	电量计硬件过压	Gauge Hardware Over Voltage										
+	55	电量计硬件欠压	Gauge Hardware Under Voltage										
+	56	平衡模块SYS故障	Balance Module SYS Error										
+	57	平衡模块DEV故障	Balance Module DEV Error										
+	58	单体硬件过压故障	Cell Hardware Over Voltage										
+	59	单体硬件欠压故障	Cell Hardware Under Voltage										
+	60	硬件充电过流故障	Hardware Charge Over Current Fault										
+	61	硬件放电过流故障	Hardware DisCharge Over Current Fault										
+	62	硬件总电压过压故障	Hardware Pack Over Voltage Fault										
+	63	硬件总电压欠压故障或熔丝断故障	Hardware Pack Under Voltage Fault\\or Fuse Break										
+	64	电池接线故障	Internal Cell Open Wire										
+	65	与主机通信断开	Com Error between Pack and host										
+	66	ISO故障	ISO Fault										
+	67	直流接触器开路	DC Break Open										
+	68	直流接触器短路	DC Break Short										
+	69	电量计与平衡模块检测电压不匹配或熔丝断故障	Pack Voltage Mismatch between Sensors										
+	70	电池SOC低故障	SOC Under Threshold Alarm										
+	71	异常放电故障	DisCharge at Force Charge mode Fault										
+	72	其他故障	Other Error										
+	73	455级联通信故障	455 stack fault										
+	74	氢气泄漏故障	H2 fault										

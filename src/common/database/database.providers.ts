@@ -30,7 +30,7 @@ export const DatabaseProviders = [
     provide: 'MONGODB_DATA_SOURCE',
     useFactory: async () => {
       await MONGODB_DATA_SOURCE.initialize();
-      console.log(MONGODB_DATA_SOURCE);
+      // console.log(MONGODB_DATA_SOURCE);
       return MONGODB_DATA_SOURCE;
     },
   },

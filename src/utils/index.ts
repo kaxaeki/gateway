@@ -19,3 +19,11 @@ export const getConfig = (type?: string) => {
   }
   return config;
 };
+
+export const getCode = () => {
+  const data1 = path.join(process.cwd(), `./.config/code.text`);
+
+  const data = fs.readFileSync(data1, 'utf8');
+  // const list = xlsx.parse(data1);
+  // console.log(data);
+};

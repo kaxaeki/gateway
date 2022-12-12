@@ -34,14 +34,18 @@ export const messages = async (
 ) => {
   console.log(receive_id_type, params, app_token);
 
-  const { data } = await methodV({
-    url: `/im/v1/messages`,
-    method: 'POST',
-    query: { receive_id_type },
-    params,
-    headers: {
-      Authorization: `Bearer ${app_token}`,
-    },
-  });
-  return data;
+  try {
+    const { data } = await methodV({
+      url: `/im/v1/messages`,
+      method: 'POST',
+      query: { receive_id_type },
+      params,
+      headers: {
+        Authorization: `Bearer ${app_token}`,
+      },
+    });
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
 };

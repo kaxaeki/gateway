@@ -13,6 +13,7 @@ import { AllExceptionsFilter } from './common/exceptions/base.exception.filter';
 import { HttpExceptionFilter } from './common/exceptions/http.exception.filter';
 import { TransformInterceptor } from './common/interceptors/transform.interceptor';
 import { generateDocument } from './doc';
+import { getCode } from '@/utils/index';
 
 declare const module: any;
 
@@ -22,6 +23,7 @@ async function bootstrap() {
     new FastifyAdapter(),
   );
 
+  // getCode();
   // 统一响应体格式
   app.useGlobalInterceptors(new TransformInterceptor());
 

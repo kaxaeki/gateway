@@ -8,7 +8,7 @@ export class AddUserDto {
   @IsNotEmpty()
   name: string;
 
-  @ApiProperty({ example: 'cookieboty@qq.com' })
+  @ApiProperty({ example: '3069625714@qq.com' })
   @IsNotEmpty()
   email: string;
 
